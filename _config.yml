@@ -1,0 +1,69 @@
+# ===============================
+# SITE SETTINGS — edit these first
+# ===============================
+title: "Fathimath Thoufira Bangana"
+subtitle: "Business Analytics | Writing | Projects"
+name: "Fathimath Thoufira Bangana"
+description: "Portfolio and essays by Fathimath Thoufira Bangana — MSc Business Analytics student at MAHE, Manipal."
+url: "https://yourusername.github.io"   # <-- replace with your actual GitHub Pages URL
+baseurl: ""
+
+# Theme (loaded remotely, no need to download theme files yourself)
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"  # options: default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Author info — shows in sidebar
+author:
+  name: "Fathimath Thoufira Bangana"
+  avatar: "/assets/images/avatar.jpg"   # add a photo here later, or delete this line
+  bio: "MSc Business Analytics @ MAHE, Manipal. BSc Economics & Statistics."
+  location: "Mangalore / Manipal, India"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:youremail@example.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:youremail@example.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+
+# Site navigation (top menu bar) — matches _data/navigation.yml
+
+# Default layout settings — makes essays look like blog posts automatically
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
