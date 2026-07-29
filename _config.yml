@@ -19,6 +19,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-include-cache
 
 # Author info — shows in sidebar
 author:
@@ -67,9 +68,3 @@ defaults:
       layout: single
       author_profile: true
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-include-cache
