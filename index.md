@@ -9,7 +9,7 @@ excerpt: "MSc Business Analytics student at MAHE, Manipal · I write essays and 
 ---
 
 <div class="hero-photo-wrap">
-  <img src="/assets/images/me.jpg" alt="Fathimath Thoufira" class="hero-photo">
+  <img src="/assets/images/me.JPG" alt="Fathimath Thoufira" class="hero-photo">
 </div>
 
 I'm someone who likes numbers just as much as words — so this site is a bit of both. Come poke around.
