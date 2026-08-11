@@ -19,6 +19,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-include-cache
 
 # Author info — shows in sidebar
 author:
