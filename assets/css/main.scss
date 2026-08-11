@@ -1,0 +1,144 @@
+---
+---
+
+@charset "utf-8";
+
+// ===============================
+// COLOR PALETTE — warm, friendly, "creator site" vibe
+// Change any hex code below to re-color the whole site
+// ===============================
+$accent-color: #F2994A;        // warm orange — buttons, links, highlights
+$accent-color-dark: #D97B2B;   // hover state
+$accent-soft: #FFF4E6;         // pale peach — card backgrounds
+$secondary-color: #2D2A26;     // warm near-black — headings, header bg
+$background-color: #FFFDF8;    // warm cream page background
+$text-color: #3A3630;          // soft dark brown-black body text
+
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+// ===============================
+// OVERRIDES
+// ===============================
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+a {
+  color: $accent-color;
+  &:hover { color: $accent-color-dark; }
+}
+
+.masthead {
+  background-color: $background-color;
+  border-bottom: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+
+  .site-title,
+  .greedy-nav a {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+
+  .greedy-nav a:hover {
+    color: $accent-color;
+  }
+}
+
+.page__hero {
+  background-color: $secondary-color;
+  border-radius: 0 0 24px 24px;
+}
+
+.page__title,
+h1, h2, h3 {
+  color: $secondary-color;
+  font-weight: 700;
+}
+
+// Soft, rounded, friendly pill buttons
+.btn {
+  border-radius: 999px !important;
+  padding: 0.75em 1.6em !important;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 14px rgba(242, 153, 74, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn--primary {
+  background-color: $accent-color;
+
+  &:hover {
+    background-color: $accent-color-dark;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(242, 153, 74, 0.45);
+  }
+}
+
+.author__urls-wrapper button,
+.author__urls li a {
+  color: $accent-color;
+}
+
+// Soft rounded "creator site" cards — no hard borders, just shadow
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.75em;
+  margin: 2.5em 0;
+}
+
+.card-tile {
+  display: block;
+  padding: 2em 1.5em;
+  border-radius: 20px;
+  background-color: $accent-soft;
+  border: none;
+  text-align: center;
+  text-decoration: none !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  color: $text-color !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    background-color: $accent-color;
+    color: #ffffff !important;
+  }
+
+  h3 {
+    margin-top: 0;
+    color: inherit;
+    font-size: 1.3em;
+  }
+
+  p {
+    margin-bottom: 0;
+    opacity: 0.85;
+  }
+}
+
+// Rounded corners everywhere for a softer feel
+img, .archive__item, .page__content {
+  border-radius: 14px;
+}
+
+// Homepage hero photo — round, friendly, centered
+.hero-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0 1.5em;
+}
+
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 5px solid $accent-soft;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
